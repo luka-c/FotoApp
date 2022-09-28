@@ -1,0 +1,197 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans"), url("./assets/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+* {
+  font-family: OpenSans;
+  color: #212121;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+/* Variables */
+
+:root {
+  --small: 12px;
+  --medium: 13px;
+  --normal: 14px;
+  --large: 16px;
+}
+
+
+
+/* Text styles */
+
+small {
+  font-size: var(--medium);
+  font-weight: 400;
+  color: black;
+}
+
+p, span {
+  font-size: var(--normal);
+  font-weight: 400;
+}
+
+p {
+  margin-top: 0.4rem;
+}
+
+h6 {
+  font-size: var(--small);
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-style: normal;
+}
+
+h5 {
+  font-size: var(--large);
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-style: normal;
+}
+
+
+
+/* Flex styles */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+
+
+/* Widths */
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+
+
+/* Button styles */
+
+button {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 2rem;
+  border: none;
+}
+
+button.outline {
+  background-color: white;
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: #d8d8d8;
+}
+
+button.btn-dark {
+  color: white;
+  background-color: black;
+  margin-bottom: 1rem;
+}
+
+button.btn-dark > span {
+  color: white;
+}
+
+button.btn-dark:hover {
+  background-color: #414A4C;
+}
+
+
+
+/* Custom input styles */
+
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  border-radius: 50%;
+  outline: 1px solid #212121;
+  margin-right: 0.5rem;
+}
+
+input[type=radio]:checked {
+  background-color: #F68B1E;
+}
+
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  border: 1px solid #AAAAAA;
+  border-radius: 5px;
+}
+
+input[type=checkbox]:checked {
+  background-color: #F68B1E;
+  color: white;
+  content: url("assets/icons/check-lg.svg");
+}

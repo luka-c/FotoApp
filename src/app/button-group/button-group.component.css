@@ -1,0 +1,12 @@
+div.flex-col {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+div.flex-col > button:first-child{
+  margin-bottom: 16px;
+}
+
+span > img {
+  margin-right: 16px;
+}

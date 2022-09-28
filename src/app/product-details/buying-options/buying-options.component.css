@@ -1,0 +1,22 @@
+.option {
+  border-bottom: 1px solid #E8E8E8;
+  padding: 15px 20px;
+}
+
+.options {
+  border: 1px solid #E8E8E8;
+  border-radius: 0.6rem;
+  margin-bottom: 15px;
+}
+
+.option:last-child {
+  border-bottom: 0px;
+}
+
+small {
+  font-size: var(--small);
+  color: #7C7C7C;
+  margin-left: 1.4rem;
+}
+
+

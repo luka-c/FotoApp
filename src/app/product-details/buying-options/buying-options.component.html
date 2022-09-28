@@ -1,0 +1,26 @@
+<div class="options">
+  <h5 class="option">
+    {{productName}}
+  </h5>
+  <div class="option flex justify-between" *ngFor="let option of options; let i = index;">
+    <div class="flex-col">
+      <div class="flex align-center">
+        <input type="radio" id="{{i}}" name="option">
+        <label for="{{i}}">
+          <span>{{option.size}}</span>
+        </label>
+      </div>
+
+      <small>{{option.type}} ({{option.resolution}})</small>
+    </div>
+
+    <span>{{option.price | number: '1.2-2'}}KN</span>
+  </div>
+</div>
+
+<div class="flex align-center">
+  <input type="checkbox" id="signature">
+  <label for="signature">
+    <span>Preuzmi s potpisom autora</span>
+  </label>
+</div>

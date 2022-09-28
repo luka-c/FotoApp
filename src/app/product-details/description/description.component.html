@@ -1,0 +1,34 @@
+<div>
+  <div class="flex-col description">
+    <div class="flex justify-between wrap gallery">
+        <div>
+          <h6>GALERIJA</h6>
+          <p>{{gallery}}</p>
+        </div>
+
+        <div>
+          <h6>AUTOR</h6>
+          <p>{{author}}</p>
+        </div>
+
+        <div>
+          <h6>AGENCIJA</h6>
+          <p>{{agency}}</p>
+        </div>
+    </div>
+
+    <div>
+      <h6>OPIS</h6>
+      <p>
+        {{description}}
+      </p>
+    </div>
+
+    <div>
+      <h6 style="margin-top: 1rem;">KLJUČNE RIJEČI</h6>
+      <div class="flex justify-start wrap">
+        <span *ngFor="let keyword of keywords" class="tag">{{keyword}}</span>
+      </div>
+    </div>
+  </div>
+</div>

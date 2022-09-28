@@ -1,0 +1,26 @@
+.description {
+  padding-left: 6.799%;
+  padding-right: 6.799%;
+  padding-top: 4.289%;
+  padding-bottom: 4.289%;
+}
+
+.tag {
+  border: 1px solid #B6B6B6;
+  border-radius: 50px;
+  padding: 5px 15px;
+  margin-right: 10px;
+  margin-top: 1rem;
+}
+
+.gallery {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+
+@media (max-width: 500px) {
+  .gallery {
+    width: 100%;
+  }
+}
